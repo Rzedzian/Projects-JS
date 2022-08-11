@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+    justify-content: start;
+    align-items: center;
+	height: 100vh;
+	background: radial-gradient(circle, rgba(43, 44, 46, 1) 13%, rgba(25, 25, 25, 1) 65%);
+}
+
+header{
+    color: #fff;
+    padding: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.cards {
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+	width: 1400px;
+
+	.card {
+		position: relative;
+		margin: 30px 10px;
+		width: 25%;
+		height: 400px;
+		text-align: center;
+		background-position: center;
+		background-size: cover;
+		border-radius: 15px;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+		overflow: hidden;
+	}
+
+    a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+
+    }
+
+	.one {
+		background-image: url('/img/wearher_app.png');
+	}
+	
+	.two {
+		background-image: url('/img/billsplitter.png');
+	}
+	.three {
+		background-image: url('/img/exchange.png');
+	}
+	.four {
+		background-image: url('/img/magic.png');
+	}
+	.five {
+		background-image: url('/img/mynotes.png');
+        background-position: 0 0;
+	}
+    .six {
+		background-image: url('/img/searcher.png');
+        background-position: 45%;
+	}
+    .seven {
+		background-image: url('/img/timer.png');
+	}
+    .eight {
+		background-image: url('/img/validator.png');
+	}
+	
+	button {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 10px;
+		border: none;
+		background: none;
+		color: #ffffff;
+		font-size: 36px;
+		text-shadow: 2px 2px 5px rgb(0, 0, 0);
+		cursor: pointer;
+		z-index: 2;
+	}
+
+	button:hover~.text {
+		clip-path: circle(120% at 50% 90%);
+
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 80px 30px;
+		background-color: rgba(0, 0, 0, .85);
+		color: #ffffff;
+		clip-path: circle(0 at 50% 90%);
+		transition: clip-path .8s;
+
+		h1{
+			color: rgb(182, 179, 97);
+		}
+
+		h2 {
+			margin-bottom: 30px;
+			color: rgb(141, 138, 138);
+		}
+	}
+}

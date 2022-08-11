@@ -1,0 +1,156 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, #2b2c2e 13%, #191919 65%);
+}
+
+header {
+  color: #fff;
+  padding: 40px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1400px;
+}
+
+.cards .card {
+  position: relative;
+  margin: 30px 10px;
+  width: 25%;
+  height: 400px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.cards a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards .one {
+  background-image: url("/img/wearher_app.png");
+}
+
+.cards .two {
+  background-image: url("/img/billsplitter.png");
+}
+
+.cards .three {
+  background-image: url("/img/exchange.png");
+}
+
+.cards .four {
+  background-image: url("/img/magic.png");
+}
+
+.cards .five {
+  background-image: url("/img/mynotes.png");
+  background-position: 0 0;
+}
+
+.cards .six {
+  background-image: url("/img/searcher.png");
+  background-position: 45%;
+}
+
+.cards .seven {
+  background-image: url("/img/timer.png");
+}
+
+.cards .eight {
+  background-image: url("/img/validator.png");
+}
+
+.cards button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px black;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.cards button:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+}
+
+.cards .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  -webkit-clip-path: circle(0 at 50% 90%);
+          clip-path: circle(0 at 50% 90%);
+  -webkit-transition: -webkit-clip-path .8s;
+  transition: -webkit-clip-path .8s;
+  transition: clip-path .8s;
+  transition: clip-path .8s, -webkit-clip-path .8s;
+}
+
+.cards .text h1 {
+  color: #b6b361;
+}
+
+.cards .text h2 {
+  margin-bottom: 30px;
+  color: #8d8a8a;
+}
+/*# sourceMappingURL=style.css.map */
