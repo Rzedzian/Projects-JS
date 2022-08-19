@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +29,8 @@ body {
 
 header {
   color: #fff;
-  padding: 40px;
+  padding: 40px 0;
+  text-align: center;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -42,13 +47,15 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .cards .card {
   position: relative;
   margin: 30px 10px;
   width: 25%;
+  min-width: 250px;
   height: 400px;
   text-align: center;
   background-position: center;
@@ -99,6 +106,19 @@ header {
   background-image: url("../img/validator.png");
 }
 
+.cards .nine {
+  background-image: url("../img/countdown_timer.png");
+}
+
+.cards .ten {
+  background-image: url("../img/wallet.png");
+  background-position: top;
+}
+
+.cards .eleven {
+  background-image: url("../img/todo.png");
+}
+
 .cards button {
   position: absolute;
   top: 10px;
@@ -145,11 +165,18 @@ header {
   transition: clip-path .8s, -webkit-clip-path .8s;
 }
 
-.cards .text h1 {
+.cards .text h2 {
   color: #b6b361;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.cards .text h2 {
+.cards .text p {
+  font-size: 18px;
+}
+
+.cards .text h3 {
   margin-bottom: 30px;
   color: #8d8a8a;
 }
